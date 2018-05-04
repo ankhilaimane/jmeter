@@ -499,8 +499,7 @@ public class ResponseAssertion extends AbstractScopedAssertion implements Serial
      * @return  Two lines of text separated by newlines, and then forward and backward pointers
      *      denoting first position of difference.
      */
-    private static StringBuilder equalsComparisonText(final String received, final String comparison)
-    {
+    private static StringBuilder equalsComparisonText(final String received, final String comparison) {
         final int recLength = received.length();
         final int compLength = comparison.length();
         final int minLength = Math.min(recLength, compLength);
